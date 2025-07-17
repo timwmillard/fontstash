@@ -1517,7 +1517,7 @@ FONS_DEF float fonsTextBounds(FONScontext* stash,
 	miny = maxy = y;
 	startx = x;
 
-	if (end == NULL)
+	if (end == NULL && str != NULL)
 		end = str + strlen(str);
 
 	for (; str != end; ++str) {
